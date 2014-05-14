@@ -47,5 +47,13 @@
 }
 
 .menuItemBox:hover{
-    border-bottom:1px solid rgb(236, 173, 173);
+    border-bottom:1px solid rgb(185, 181, 181);
+}
+
+.navActive{
+    border-bottom:1px solid rgb(185, 181, 181);
+}
+
+.link{
+    text-decoration: none;
 }
