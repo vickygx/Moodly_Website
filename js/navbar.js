@@ -15,10 +15,10 @@ var add_navbar = function(divId){
   var logo = '<div id="logo">MOODLY</div>';
 
   var menu = '<div id="menu">';
-  menu += '<div class="menuItemBox"><a href="index.html" class="menuItem">ABOUT</a></div>';
-  menu += '<div class="menuItemBox"><a href="ethnographic.html" class="menuItem">ETHNOGRAPHIC STUDIES</a></div>';
-  menu += '<div class="menuItemBox"><a href="concept.html" class="menuItem">CONCEPT</a></div>';
-  menu += '<div class="menuItemBox"><a href="howitworks.html" class="menuItem">HOW IT WORKS</a></div>';
+  menu += '<div class="menuItemBox"><a href="index.html" class="menuItem">About</a></div>';
+  menu += '<div class="menuItemBox"><a href="ethnographic.html" class="menuItem">Ethnographic studies</a></div>';
+  menu += '<div class="menuItemBox"><a href="concept.html" class="menuItem">Concept</a></div>';
+  menu += '<div class="menuItemBox"><a href="howitworks.html" class="menuItem">How it works</a></div>';
   menu += '</div>';
             
   var navBarCloser = '</div>';
