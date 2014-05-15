@@ -2,13 +2,21 @@
     z-index:1;
 }
 
+body{
+    margin: 0px;
+}
+
 
 #contentContainer{
     background: url(../img/blue_glass.png) no-repeat center center fixed;
     background-size:100%;
     overflow:auto;
-/*    width:100%;
-    height:100%;*/
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+
 }
 
 #blackOverlay{

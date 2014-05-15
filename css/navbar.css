@@ -17,6 +17,7 @@
     padding-right:50px;
     background-color:rgb(58, 57, 72);
     box-shadow: 5px 5px gray;
+    z-index:5;
 }
 
 #logo{

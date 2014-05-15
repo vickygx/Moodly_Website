@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Style Sheets -->
-    <link rel="stylesheet" type="text/css" href="css/general.css" /> 
+    <!-- <link rel="stylesheet" type="text/css" href="css/general.css" />  -->
     <link rel="stylesheet" type="text/css" href="css/navbar.css" /> 
     <link rel="stylesheet" type="text/css" href="css/landing.css" /> 
     <!-- Important Owl stylesheet -->
@@ -32,10 +32,20 @@
             if (!hasClicked){
                 add_navbar("#body");
                 $('#startImg').attr('src', 'img/tap_to_close.png');
+                $( "#welcomeBox" ).animate({
+                    left: "+=200px",
+                  }, 100, function() {
+                    // Animation complete.
+                  });
             }
             else {
                 $('#navbar').remove();
                 $('#startImg').attr('src', 'img/tap_to_start.png');
+                $( "#welcomeBox" ).animate({
+                    left: "-=200px",
+                  }, 100, function() {
+                    // Animation complete.
+                  });
             }
             hasClicked = !hasClicked;            
         }
