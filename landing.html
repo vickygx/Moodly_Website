@@ -1,0 +1,81 @@
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" type="text/css" href="css/general.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/navbar.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/landing.css" /> 
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="owl_carousel/owl-carousel/owl.carousel.css">
+     
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="owl_carousel/owl-carousel/owl.theme.css">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Poiret+One|Quicksand:400,700|Quattrocento+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Dosis:300,400|Source+Code+Pro:300,400|Roboto|Roboto+Slab:400,300|Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+
+    <!-- Load any supplemental Javascript libraries here -->
+    <script type="text/javascript" src="external_js/jquery/js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
+
+    <!-- Include js plugin -->
+    <script src="owl_carousel/owl-carousel/owl.carousel.js"></script>
+
+    
+    <script type="text/javascript">
+        var hasClicked = false;
+       
+        var toggleNavBar = function(){
+            if (!hasClicked){
+                add_navbar("#body");
+                $('#startImg').attr('src', 'img/tap_to_close.png');
+            }
+            else {
+                $('#navbar').remove();
+                $('#startImg').attr('src', 'img/tap_to_start.png');
+            }
+            hasClicked = !hasClicked;            
+        }
+
+        $(document).ready(function() {
+
+            //  // Setting carousel
+            // $("#owlCarousel").owlCarousel({
+            //     items: 1,
+
+            //     //Basic Speeds
+            //     slideSpeed : 200,
+            //     paginationSpeed : 800,
+            //     rewindSpeed : 1000,
+             
+            //     //Autoplay
+            //     autoPlay : true,
+            //     stopOnHover : true
+            // });
+            $("#welcomeBox").click(function(){
+                toggleNavBar();
+            });
+        });
+     </script>
+
+    <title>Moodly</title>
+</head>
+<body id="body">
+
+     <div id="ContentContainer">
+       <!--  <div id="blackOverlay">
+            <img src="img/black_background.png">
+        </div> -->
+        <div id="welcomeBox" class="vertical-align">
+                <img id="welcomeToImg" src="img/welcome_moodly.png">
+                <img id="startImg" src="img/tap_to_start.png">
+        </div>
+      
+        
+    </div>
+
+</body>
+</html>

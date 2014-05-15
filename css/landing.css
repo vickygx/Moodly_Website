@@ -1,0 +1,52 @@
+.html{
+    z-index:1;
+}
+
+
+#contentContainer{
+    background: url(../img/blue_glass.png) no-repeat center center fixed;
+    background-size:100%;
+    overflow:auto;
+/*    width:100%;
+    height:100%;*/
+}
+
+#blackOverlay{
+    position:absolute;
+    z-index: 0;
+    width:100%;
+    height:100%;
+    opacity:0.8;
+}
+
+#welcomeBox{
+    width:400px;
+    height:225px;
+    /*background-color:rgba(0,0,0,0.7);*/
+    margin:0 auto;
+    /*margin-top:calc(50% - 125px);*/
+    cursor: pointer;
+}
+
+.vertical-align{
+    position:relative;
+    top:30%;
+    transform: translateY(-50%);
+}
+
+#welcomeToImg{
+    width:100%;
+}
+
+#startImg{
+    position:absolute;
+    width:100%;
+    top:0px;
+    left:0px;
+    transition: opacity 0.5s ease;
+    opacity:0;
+}
+
+#startImg:hover{
+    opacity:1.0;
+}

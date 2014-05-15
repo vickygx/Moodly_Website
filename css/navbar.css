@@ -35,7 +35,7 @@
 }
 
 .menuItemBox{
-    margin: 5px 30px 3px 0px;
+    margin: 5px 20px 3px 0px;
     padding-bottom:1px;
     padding-left:2px;
     float:left;
@@ -44,14 +44,15 @@
 .menuItem{
     text-decoration: none;
     color:rgb(236, 227, 227);
+    font-size:14pt;
 }
 
 .menuItemBox:hover{
-    border-bottom:1px solid rgb(185, 181, 181);
+    border-bottom:1px solid rgb(130, 173, 238);
 }
 
 .navActive{
-    border-bottom:1px solid rgb(185, 181, 181);
+    border-bottom:1px solid rgb(130, 173, 238);
 }
 
 .link{
