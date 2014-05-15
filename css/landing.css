@@ -24,7 +24,7 @@
     height:225px;
     margin:0 auto;
     cursor: pointer;
-    -webkit-animation: 2s jiggle infinite linear;
+    -webkit-animation: 1.5s jiggle infinite linear;
 }
 
 @-webkit-keyframes jiggle {
