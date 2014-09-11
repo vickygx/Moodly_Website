@@ -1,15 +1,3 @@
-// <div id="navbar"> 
-//     <div id="logo">MOODLY</div>
-//     <div id="menu">
-//         <div class="menuItemBox"><a href="#" class="menuItem">ABOUT</a></div>
-//         <div class="menuItemBox"><a href="#" class="menuItem">ETHNOGRAPHIC STUDIES</a></div>
-//         <div class="menuItemBox"><a href="#" class="menuItem">CONCEPT</a></div>
-//         <div class="menuItemBox"><a href="#" class="menuItem">HOW IT WORKS</a></div>
-//     </div>
-// </div> 
-
-
-
 var add_navbar = function(divId, activeId){
   var navBarOpener = '<div id="navbar">';
   var logo = '<a href="index.html" class="link"><div id="logo">MOODLY</div> </a>';
@@ -28,10 +16,6 @@ var add_navbar = function(divId, activeId){
 
   $(divId).prepend(navBarHtml);
   $(activeId).addClass('navActive');
-  // $("#navLanding").click(function(){
-  //   $("#blackOverlay").css("opacity", '0.8');
-  // });
-
-
+  
 }
 
