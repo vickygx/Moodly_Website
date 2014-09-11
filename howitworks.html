@@ -20,29 +20,12 @@
     <script type="text/javascript" src="external_js/jquery/js/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" src="js/navbar.js"></script>
 
-    <!-- Include js plugin -->
-    <script src="owl_carousel/owl-carousel/owl.carousel.js"></script>
-
     
      <script type="text/javascript">
         $(document).ready(function() {
 
             // Adding navigation bar
             add_navbar("#body", "#navWorks");
-
-             // Setting carousel
-            $("#owlCarousel").owlCarousel({
-                items: 1,
-
-                //Basic Speeds
-                slideSpeed : 200,
-                paginationSpeed : 800,
-                rewindSpeed : 1000,
-             
-                //Autoplay
-                autoPlay : true,
-                stopOnHover : true
-            });
 
         });
      </script>
@@ -52,15 +35,13 @@
 <body id="body">
 
      <div id="ContentContainer">
+        <div id="menuButton">+ MENU </div>
         <div id="bigContainer">
             <div class="heading"> <div class="headingText">HOW IT WORKS</div></div>
-            <div id="imageContainer">
-                <div id="owlCarousel" class="owl-carousel">
+            <div id="imageContainer">  
                     <div class="imageDiv"> <img src="img/Works_Positive_Saved.png" alt="" class="image"></div>
                     <div class="imageDiv"> <img src="img/Works_Negative_Saved.png" alt="" class="image"></div>
-                    <div class="imageDiv"> <img src="img/Works_Speak.png" alt="" class="image"></div>
-                   
-                </div>
+                    <div class="imageDiv"> <img src="img/Works_Speak.png" alt="" class="image"></div>        
             </div>
 
             <div id="textContainer">

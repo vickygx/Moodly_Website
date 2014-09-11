@@ -17,6 +17,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Poiret+One|Quicksand:400,700|Quattrocento+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Dosis:300,400|Source+Code+Pro:300,400|Roboto|Roboto+Slab:400,300|Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
 
+
     <!-- Load any supplemental Javascript libraries here -->
     <script type="text/javascript" src="external_js/jquery/js/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" src="js/navbar.js"></script>
@@ -26,36 +27,33 @@
 
     
      <script type="text/javascript">
+        var hasClicked = true;
+        var toggleNavBar = function(){
+            if (!hasClicked){
+                add_navbar("#body", "#navAbout");
+            }
+            else {
+                $('#navbar').remove();
+            }
+            hasClicked = !hasClicked;            
+        }
         $(document).ready(function() {
 
-            // Adding navigation bar
             add_navbar("#body", "#navAbout");
 
-             // Setting carousel
-            $("#owlCarousel").owlCarousel({
-                items: 1,
-
-                //Basic Speeds
-                slideSpeed : 200,
-                paginationSpeed : 800,
-                rewindSpeed : 1000,
-             
-                //Autoplay
-                autoPlay : true,
-                stopOnHover : true
+            $("#menuButton").click(function(){
+                toggleNavBar();
             });
 
         });
      </script>
 
-    <title>Moodly</title>
+    <title>+ MOODLY</title>
 </head>
 <body id="body">
 
      <div id="ContentContainer">
-        <!-- <div id="blackOverlay">
-            <img src="img/black_background.png">
-        </div> -->
+        <div id="menuButton">+ MENU </div>
 
         <div id="bigContainer">
 
@@ -63,7 +61,7 @@
             <div class="heading"> <div class="headingText">ABOUT </div></div>
 
             <div id="imageContainer">
-                <iframe width="700" height="450" src="http://www.youtube.com/embed/-_HjizI5_sU" frameborder="0" allowfullscreen></iframe>
+                <iframe width="630" height="390" src="http://www.youtube.com/embed/-_HjizI5_sU" frameborder="0" allowfullscreen></iframe>
             </div>
 
             <div id="textContainer">
@@ -74,12 +72,14 @@
                 This idea has been developed by Vicky Gong, Connie Huang and Mei Zuo with the instruction of
                 MIT professor Federico Casalegno and TA Cagri Zaman. This team has been collaborating with Avea and the MIT Mobile Experience Lab as well.
 
-                <br><br>
-                CONTACT:
-                <br><br>
-                Vicky Gong: vickyg@mit.edu <br>
-                Connie Huang: connieh@mit.edu <br>
-                Mei Zuo: meizuo@mit.edu <br>
+                <span id="contact">
+                    <br><br>
+                    CONTACT:
+                    <br><br>
+                    Vicky Gong: vickyg@mit.edu <br>
+                    Connie Huang: connieh@mit.edu <br>
+                    Mei Zuo: meizuo@mit.edu <br>
+                </span>
             </div>
    
         </div>

@@ -20,42 +20,25 @@
     <script type="text/javascript" src="external_js/jquery/js/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" src="js/navbar.js"></script>
 
-    <!-- Include js plugin -->
-    <script src="owl_carousel/owl-carousel/owl.carousel.js"></script>
-
-    
      <script type="text/javascript">
         $(document).ready(function() {
 
             // Adding navigation bar
-            add_navbar("#body");
-
-             // Setting carousel
-            $("#owlCarousel").owlCarousel({
-                items: 1,
-
-                //Basic Speeds
-                slideSpeed : 200,
-                paginationSpeed : 800,
-                rewindSpeed : 1000,
-             
-                //Autoplay
-                autoPlay : true,
-                stopOnHover : true
-            });
+            add_navbar("#body", "#navVideo");
 
         });
      </script>
 
-    <title>Moodly</title>
+    <title>+ Moodly</title>
 </head>
 <body id="body">
 
      <div id="ContentContainer">
+        <div id="menuButton">+ MENU </div>
         <div id="bigContainer">
             <div class="heading"> <div class="headingText">MUSEUM DEMO</div></div>
             <div id="mainVideo">
-                <iframe width="850" height="550" src="http://www.youtube.com/embed/h5uQMxL6ExM" frameborder="0" allowfullscreen></iframe>
+                <iframe width="800" height="525" src="http://www.youtube.com/embed/h5uQMxL6ExM" frameborder="0" allowfullscreen></iframe>
             <div>
         </div>
     </div>
